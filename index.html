@@ -1,0 +1,13 @@
+<script>
+var auth = "https://login.microsoftonline.com/login.srf?wa=wsignin1.0&whr=homedepot.com&wreply=https://portal.homedepot.com/sites/myapron_en_us"
+
+//open auth url in new tab, once auth is done open the other urls in new tabs
+window.open(auth, '_blank');
+//wait for button press to continue
+alert("Press OK after you have logged in to Home Depot.");
+
+var urls = ["https://order-up.service.homedepot.com/", "https://myview.apps.homedepot.com/", "https://customerprograms.homedepot.com/", "https://wd5.myworkday.com/homedepot/d/home.htmld", ]
+
+//for each url in urls open in new tab
+urls.forEach(url => window.open(url, '_blank'));
+</script>
